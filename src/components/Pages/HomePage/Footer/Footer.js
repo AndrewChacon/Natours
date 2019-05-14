@@ -1,8 +1,8 @@
 import React from "react";
-import NormalLogo1 from "../img/logo-green-1x.png";
-import NormalLogo2 from "../img/logo-green-2x.png";
-import SmallLogo1 from "../img/logo-green-small-1x.png";
-import SmallLogo2 from "../img/logo-green-small-2x.png";
+import NormalLogo1 from "./logo-green-1x.png";
+import NormalLogo2 from "./logo-green-2x.png";
+import SmallLogo1 from "./logo-green-small-1x.png";
+import SmallLogo2 from "./logo-green-small-2x.png";
 
 export default function Footer() {
   return (
@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="footer__navigation">
             <ul className="footer__list">
               <li className="footer__item">
-                <a href="javascript:void(0)" className="footer__link">
+                <a href="https://google.com" className="footer__link">
                   Company
                 </a>
               </li>

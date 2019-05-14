@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import NavigationBar from "./NavigationBar";
-import Header from "./Header";
-import MainBody from "./MainBody";
-import Footer from "./Footer";
-import Popup from "./Popup";
+import NavigationBar from "./NavigationBar/NavigationBar";
+import Header from "./Header/Header";
+import MainBody from "./MainBody/MainBody";
+import Footer from "./Footer/Footer";
+import Popup from "./Popup/Popup";
 
 export default class HomePage extends Component {
   render() {

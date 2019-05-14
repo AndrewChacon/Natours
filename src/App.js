@@ -1,9 +1,9 @@
 import React from "react";
 import "./sass/main.scss";
-import HomePage from "./components/HomePage";
+import HomePage from "./components/Pages/HomePage/HomePage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Page from "./components/Page";
-import ErrorPage from "./components/ErrorPage";
+import ErrorPage from "./components/Pages/ErrorPage/ErrorPage";
 
 function App() {
   return (

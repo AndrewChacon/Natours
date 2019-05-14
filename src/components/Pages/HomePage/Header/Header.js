@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../img/logo-white.png";
+import Logo from "./logo-white.png";
 
 export default function Header() {
   return (
