@@ -21,6 +21,8 @@ export default class NavigationBar extends Component {
           id="navi-toggle"
           className="navigation__checkbox"
           onClick={this.handleClick}
+          checked={this.state.isToggleOn}
+          readOnly
         />
         <label htmlFor="navi-toggle" className="navigation__button">
           <span className="navigation__icon">&nbsp;</span>
