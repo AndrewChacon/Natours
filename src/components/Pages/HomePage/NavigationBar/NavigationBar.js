@@ -26,20 +26,29 @@ export default class NavigationBar extends Component {
           <span className="navigation__icon">&nbsp;</span>
         </label>
         <div
-          className={
-            this.state.isToggleOn
-              ? "navigation__background"
-              : "navigation__background--hidden"
-          }
+          // className={`wrapper searchDiv ${
+          //   this.state.something ? "my-cla0ss " : ""
+          // } ${this.state.somethingElse ? "my-other-class " : ""}`}
+          className={`
+          navigation__background
+            ${
+              this.state.isToggleOn
+                ? "navigation__background--showing"
+                : "navigation__background--hidden"
+            }
+          `}
         >
           &nbsp;
         </div>
         <nav
-          className={
-            this.state.isToggleOn
-              ? "navigation__nav"
-              : "navigation__nav--hidden"
-          }
+          className={`
+          navigation__nav
+            ${
+              this.state.isToggleOn
+                ? "navigation__nav--showing"
+                : "navigation__nav--hidden"
+            }
+          `}
         >
           <ul className="navigation__list">
             <li className="navigation__item">
