@@ -4,6 +4,7 @@ import HomePage from "./components/Pages/HomePage/HomePage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Page from "./components/Page";
 import ErrorPage from "./components/Pages/ErrorPage/ErrorPage";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 function App() {
   return (

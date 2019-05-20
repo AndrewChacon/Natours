@@ -1,15 +1,35 @@
 import React from "react";
 
-export default function Popup() {
+const Popup = props => {
   return (
-    <div className="popup" id="popup">
-      <div className="popup__content">
+    <div
+      className={`
+          popup
+            ${props.isToggleOn ? "popup--showing" : "popup--hidden"}
+          `}
+      id="popup"
+    >
+      <div
+        className="popup__content"
+        className={`
+      popup__content
+        ${
+          props.isToggleOn
+            ? "popup__content--showing"
+            : "popup__content--hidden"
+        }
+      `}
+      >
         <div className="popup__left">
           <img src="img/nat-8.jpg" alt="Tour photo" className="popup__img" />
           <img src="img/nat-9.jpg" alt="Tour photo" className="popup__img" />
         </div>
         <div className="popup__right">
-          <a href="#section-tours" className="popup__close">
+          <a
+            href="#section-tours"
+            className="popup__close"
+            onClick={props.handlePopupToggle}
+          >
             &times;
           </a>
           <h2 className="heading-secondary u-margin-bottom-small popup__heading">
@@ -39,4 +59,6 @@ export default function Popup() {
       </div>
     </div>
   );
-}
+};
+
+export default Popup;

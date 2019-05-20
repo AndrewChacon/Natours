@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Tours = () => {
+const Tours = props => {
   return (
     <section className="section-tours">
       <div className="u-center-text u-margin-bottom-big">
@@ -36,7 +36,7 @@ const Tours = () => {
                   <p className="card__price-only">Only</p>
                   <p className="card__price-value">$297</p>
                 </div>
-                <a href="#popup" className="btn btn--white">
+                <a onClick={props.handlePopupToggle} className="btn btn--white">
                   Book Now
                 </a>
               </div>
@@ -68,7 +68,7 @@ const Tours = () => {
                   <p className="card__price-only">Only</p>
                   <p className="card__price-value">$497</p>
                 </div>
-                <a href="#popup" className="btn btn--white">
+                <a onClick={props.handlePopupToggle} className="btn btn--white">
                   Book Now
                 </a>
               </div>
@@ -100,7 +100,7 @@ const Tours = () => {
                   <p className="card__price-only">Only</p>
                   <p className="card__price-value">$897</p>
                 </div>
-                <a href="#popup" className="btn btn--white">
+                <a onClick={props.handlePopupToggle} className="btn btn--white">
                   Book Now
                 </a>
               </div>
@@ -111,9 +111,12 @@ const Tours = () => {
 
       <div className="u-center-text u-margin-top-huge">
         {/* #book */}
-        <Link to="/about">
+        {/* <Link to="/about">
           <p className="btn btn--green">Discover all tours</p>
-        </Link>
+        </Link> */}
+        <a href="#book" className="btn btn--green">
+          Discover all tours
+        </a>
       </div>
     </section>
   );
