@@ -1,4 +1,6 @@
 import React from "react";
+import PopupImage1 from "./nat-8.jpg";
+import PopupImage2 from "./nat-9.jpg";
 
 const Popup = props => {
   return (
@@ -21,8 +23,8 @@ const Popup = props => {
       `}
       >
         <div className="popup__left">
-          <img src="img/nat-8.jpg" alt="Tour photo" className="popup__img" />
-          <img src="img/nat-9.jpg" alt="Tour photo" className="popup__img" />
+          <img src={PopupImage1} alt="Tour photo" className="popup__img" />
+          <img src={PopupImage2} alt="Tour photo" className="popup__img" />
         </div>
         <div className="popup__right">
           <a
